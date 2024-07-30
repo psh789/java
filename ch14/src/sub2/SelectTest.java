@@ -33,7 +33,7 @@ public class SelectTest {
 			
 			// 3단계 - SQL 실행
 			String sql = "select * from `user1`";
-			ResultSet rs = stmt.executeQuery(sql);
+			ResultSet rs = stmt.executeQuery(sql); // <-- select문은 executeQuery()로 실행
 			
 			// 4단계 - ResultSet 결과처리
 			while(rs.next()) {
